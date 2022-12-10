@@ -7,8 +7,8 @@ with open(sys.argv[1], 'r') as file:
 
 # Define function to calculate CpG observed/expected ratio
 def obs_exp_ratio(seq):
-    obs = seq.count('cg')/len(seq)
-    exp = (seq.count('c')/len(seq))*(seq.count('g')/len(seq))
+    obs = seq.count('CG')/len(seq)
+    exp = (seq.count('C')/len(seq))*(seq.count('G')/len(seq))
     return obs/exp
 
 # Define sliding window iterator with window size 500 and step size 250
